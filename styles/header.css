@@ -21,6 +21,7 @@
 
   .main-header-title{
     font-size:300%;
+    padding-right:5%;
   }
   
   .header-nav{
@@ -42,12 +43,12 @@
   
   .header-nav-link{
     padding:20px;
-    transition:0.4s;
+    transition:0.3s;
     font-weight:600;
   }
   
   .header-nav-link:hover{
-    color: rgb(139, 139, 139);
+    background-color: rgb(139, 139, 139);
     cursor:pointer;
   }
   
