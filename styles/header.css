@@ -17,21 +17,7 @@
     object-fit:cover;
   }
 
-  @media (max-width:1000px)
-  {
-    .main-header{
-      height:300px;
-    }
-
-    .main-header-logo{
-      height:200px;
-    }
-
-    .header-nav{
-      height:250px;
-      font-size:24px;
-    }
-  }
+  
 
   .main-header-title{
     font-size:300%;
@@ -63,4 +49,21 @@
   .header-nav-link:hover{
     color: rgb(139, 139, 139);
     cursor:pointer;
+  }
+  
+  @media (max-width:1000px)
+  {
+    .main-header{
+      height:300px;
+    }
+
+    .main-header-logo{
+      height:200px;
+    }
+
+    .header-nav{
+      height:250px;
+      font-size:40px;
+      flex-wrap: wrap;
+    }
   }
