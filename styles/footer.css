@@ -7,15 +7,29 @@
   background-color: rgb(226, 226, 226);
   height:300px;
   padding:0 15%;
+  font-size:26px;
 }
 
 .footer-contact{
   color:rgb(130, 130, 130);
 }
 
+
 @media (max-width:1000px){
   .footer{
     flex-direction: column;
-    padding:15%;
+    padding:10%;
+    padding-bottom:200px;
+    row-gap:100px;
   }
+
+  .footer-map-widget{
+    height:250px;
+    width:650px;
+  }
+
+  .footer-contact{
+    font-size:40px;
+  }
+
 }
