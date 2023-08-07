@@ -8,9 +8,31 @@
   row-gap:5%;
   margin:0;
 }
-d
+
 .main-body-content{
   width:80%;
+}
+
+.main-body-photo{
+  margin: 50px auto;
+  display: block;
+  width:50%;
+}
+
+.main-body-collage{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap:10px;
+  row-gap: 10px;
+  margin:30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body-collage-photo{
+  width:45%;
+  object-fit: cover;
 }
 
 .main-body-sidebar{
@@ -30,6 +52,11 @@ d
 
   .main-body-sidebar{
     width:100%;
+  }
+
+
+  .main-body-collage{
+    flex-direction: column;
   }
 
 }
