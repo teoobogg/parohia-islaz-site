@@ -16,7 +16,7 @@
 .main-body-photo{
   margin: 50px auto;
   display: block;
-  width:50%;
+  width:75%;
 }
 
 .main-body-collage{
@@ -57,6 +57,10 @@
 
   .main-body-collage{
     flex-direction: column;
+  }
+
+  .main-body-collage-photo{
+    width:75%;
   }
 
 }
