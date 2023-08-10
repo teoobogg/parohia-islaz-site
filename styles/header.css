@@ -15,9 +15,19 @@
     object-fit:cover;
   }
 
-  .main-header-title{
+  .main-header-text{
     font-size:300%;
-    padding-right:5%;
+    padding:0 5%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .main-header-title{
+
+  }
+
+  .main-header-subtitle{
+    font-size:65%;
   }
   
   
@@ -29,6 +39,10 @@
 
     .main-header-logo{
       height:200px;
+    }
+
+    .main-header-text{
+      padding:0;
     }
 
   }
