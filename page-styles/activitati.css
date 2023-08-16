@@ -18,7 +18,8 @@
 .main-body-grid-element-pic{
   height:60%;
   width:100%;
-  object-fit:contain;
+  object-fit:cover;
+  object-position:0px 11px;
   display: block;
   margin-left: auto;
   margin-right: auto;
