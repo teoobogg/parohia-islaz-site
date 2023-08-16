@@ -1,5 +1,4 @@
 .main-body-grid{
-  background-color: lightblue;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -8,12 +7,12 @@
 }
 
 .main-body-grid-element{
-  background-color: pink;
   width:300px;
   height:300px;
   display: flex;
   flex-direction:column;
   box-shadow:0px 0px 5px rgb(152, 152, 152);
+  background-color: rgb(235, 235, 235);
 }
 
 .main-body-grid-element-pic{
