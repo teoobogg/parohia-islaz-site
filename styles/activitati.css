@@ -47,4 +47,12 @@
     height:500px;
     margin: 50px 0px;
   }
+
+  .main-body-grid-element-title{
+    font-size:34px;
+  }
+
+  .main-body-grid-element-desc{
+    font-size:26px;
+  }
 }

@@ -22,9 +22,15 @@ h1{
 }
 
 p{
-  text-indent:40px;
+  text-indent:75px;
 }
 
 li{
-  text-indent:50px;
+  text-indent:110px;
+  list-style-type:"-";
+}
+
+.li2{
+  list-style-type:square;
+  text-indent:160px;
 }
