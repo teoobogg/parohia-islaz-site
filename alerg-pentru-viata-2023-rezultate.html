@@ -81,7 +81,7 @@
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block";
+          slides[slideIndex-1].style.display = "flex";
           dots[slideIndex-1].className += " active";
         }
       </script>
@@ -92,37 +92,37 @@
       <div class="main-body-content">
           <h1 style="text-decoration: none; text-align:center"> Alerg pentru Viață </h1>
           <h2 style="font-style:italic; text-indent:100px;"> Lăsaţi copiii să vină la Mine şi nu-i opriţi, căci a unora ca aceştia este împărăţia lui Dumnezeu <span style="font-style:normal;"> (Matei 10:14) </span></h2>
-          
+
           <div class="main-body-gallery">
             
             <div class="mySlides">
               <div class="numbertext">1 / 6</div>
-                <img src="photos/1a4531eb3cf300715500a6eec31252ad7da417cb.png" style="width:100%">
+                <img src="photos/1a4531eb3cf300715500a6eec31252ad7da417cb.png" class="slidePhoto">
             </div>
           
             <div class="mySlides">
               <div class="numbertext">2 / 6</div>
-                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%">
+                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" class="slidePhoto">
             </div>
           
             <div class="mySlides">
               <div class="numbertext">3 / 6</div>
-                <img src="photos/Screenshot 2021-08-30 214001.png" style="width:100%">
+                <img src="photos/Screenshot 2021-08-30 214001.png" class="slidePhoto">
             </div>
           
             <div class="mySlides">
               <div class="numbertext">4 / 6</div>
-                <img src="photos/vrtxr32.PNG" style="width:100%">
+                <img src="photos/vrtxr32.PNG" class="slidePhoto">
             </div>
           
             <div class="mySlides">
               <div class="numbertext">5 / 6</div>
-                <img src="photos/Screenshot 2021-08-30 214001.png" style="width:100%">
+                <img src="photos/Screenshot 2021-08-30 214001.png" class="slidePhoto">
             </div>
           
             <div class="mySlides">
               <div class="numbertext">6 / 6</div>
-                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%">
+                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" class="slidePhoto">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -147,11 +147,14 @@
               <div class="column">
                 <img class="demo cursor" src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%" onclick="currentSlide(6)">
               </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%" onclick="currentSlide(6)">
+              </div>
             </div>
 
-          </div>
-      
         </div>
+      
+      </div>
         
       <div class="main-body-sidebar">
         <table width="100%" class="doxo-table"><tr><td ><div class=""><script type="text/javascript">widgetContext_417c8830427f={"widgetid":"views_view_webwidget_de2559ef607c60d9d8b5cb575285e742"};</script><script src="https://doxologia.ro/doxowidgetcalendar"></script><div class="doxowidgetcalendar" id="views_view_webwidget_de2559ef607c60d9d8b5cb575285e742"></div></div></td></tr></table>
