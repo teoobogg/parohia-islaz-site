@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/photo-gallery.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +55,36 @@
             x.className = "header-nav";
           }
         }
-        </script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
 
     </div>
 
@@ -62,56 +92,66 @@
       <div class="main-body-content">
           <h1 style="text-decoration: none; text-align:center"> Alerg pentru Viață </h1>
           <h2 style="font-style:italic; text-indent:100px;"> Lăsaţi copiii să vină la Mine şi nu-i opriţi, căci a unora ca aceştia este împărăţia lui Dumnezeu <span style="font-style:normal;"> (Matei 10:14) </span></h2>
-          <img src="photos/afis-2023.jpeg" class="main-body-photo" style="width:40%;">
-          <p>În nădejdea descoperirii mesajului lui Hristos către fiecare om, Parohia Islaz vine spre copiii comunității noastre parohiale cu un concurs de alergat în care aceștia să își manifeste spiritul în dezvoltare și calitățile trupești și sufletești.</p>
-          <p>Concursul, denumit <span style="font-weight:bold;">Alerg pentru Viață</span>, constă în probe de alergare liberă pe un traseu predefinit, pe terenul de fotbal al satului din cadrul bazei sportive. Proba de efort va fi personalizată în funcție de vârsta fiecărei grupe de vârstă, fiind reprezentată de un anumit număr de ture ale terenului.</p>
-          <p style="margin-top:55px;">Punctual, detaliile legate de eveniment sunt următoarele:</p>
-          <p>- datele de înscriere ale concursului sunt:</p>
-            <li class="li2">22 august 2023 orele 16:00-20:00;</li>
-            <li class="li2">23 august 2023 orele 16:00-20:00.</li>
-          <img src="photos/banner-2023.jpg" class="main-body-photo">
-          <p>- zilele de desfășurare ale concursului sunt:</p>  
-            <li class="li2">26 august 2023 orele 18:00-20:00 (pentru copiii cu vârsta între 7 și 12 ani);</li>
-            <li class="li2">27 august 2023 orele 18:00-20:00 (pentru tinerii cu vârsta între 13 și 18 ani).</li>
-          <p>- grupele de participanți vor fi formate din:</p>
-            <li class="li2">grupa 1 – băieți cu vârsta de 7 ani;</li>
-            <li class="li2">grupa 2 – fete cu vârsta de 7 ani;</li>
-            <li class="li2">grupa 3 – băieți cu vârsta de 8 ani;</li>
-            <li class="li2">grupa 4 – fete cu vârsta de 8 ani;</li>
-            <li class="li2">grupa 5 – băieți cu vârsta de 9 ani;</li>
-            <li class="li2">grupa 6 – fete cu vârsta de 9 ani;</li>
-            <li class="li2">grupa 7 – băieți cu vârsta de 10 ani;</li>
-            <li class="li2">grupa 8 – fete cu vârsta de 10 ani;</li>
-            <li class="li2">grupa 9 – băieți cu vârsta de 11 ani;</li>
-            <li class="li2">grupa 10 – fete cu vârsta de 11 ani;</li>
-            <li class="li2">grupa 11 – băieți cu vârsta de 12 ani;</li>
-            <li class="li2">grupa 12 – fete cu vârsta de 12 ani;</li>
-            <li class="li2">grupa 13 – băieți cu vârsta între 13 și 14 ani;</li>
-            <li class="li2">grupa 14 – fete cu vârsta între 13 și 14 ani;</li>
-            <li class="li2">grupa 15 – băieți cu vârsta între 15 și 16 ani;</li>
-            <li class="li2">grupa 16 – fete cu vârsta între 15 și 16 ani;</li>
-            <li class="li2">grupa 17 – băieți cu vârsta între 17 și 18 ani;</li>
-            <li class="li2">grupa 18 – fete cu vârsta între 17 și 18 ani.</li>
-          <p>Pentru buna desfășurare a concursului, facem un apel pentru îndemnarea copiilor la înscrierea la concurs. Înscrierea va consta în completarea unei fișe de înscriere de către unul dintre părinți, însoțită de o copie a cărții de identitate și o copie a certificatului de naștere al copilului.</p>
-          <p>Totodată, pentru asigurarea logisticii necesare unei astfel de manifestări, vom avea nevoie de voluntari care să asigure bunul mers al concursului. Pentru aceasta, îi rugăm pe tinerii peste 18 ani (și pe cei până în 18 ani, neparticipanți la concurs), să vină alături de noi pentru a ne ajuta în organizare.</p>
-          <p>Premiile acordate vor fi:</p>
-          <p style="margin-top:55px;">- locul I:</p>
-            <li class="li2">trofeu personalizat <b>Alerg pentru Viață;</b></li>
-            <li class="li2">medalie de aur personalizată <b>Alerg pentru Viață;</b></li>
-            <li class="li2">diplomă cu menționarea locului ocupat;</li>
-            <li class="li2">premiu în bani în valoare de 150 lei.</li>
-          <p>- locul II:</p>
-            <li class="li2">medalie de argint personalizată <b>Alerg pentru Viață;</b></li>
-            <li class="li2">diplomă cu menționarea locului ocupat;</li>
-            <li class="li2">premiu în bani în valoare de 100 lei.</li>
-          <p>- locul III:</p>  
-            <li class="li2">medalie de bronz personalizată <b>Alerg pentru Viață;</b></li>
-            <li class="li2">diplomă cu menționarea locului ocupat;</li>
-            <li class="li2">premiu în bani în valoare de 50 lei.</li>
-          <p>Toți participanții vor primi diplome de participare personalizate <b>Alerg pentru Viață</b> și se vor bucura – pe lângă atmosfera de competiție – de sucuri, apă, voie bună și tot ce le vom putea oferi spre buna dispoziție.</p>
-          <p style="margin-top:55px; text-align: right; font-size:18px;">Vă așteptăm cu bucurie!</p>
+          
+          <div class="main-body-gallery">
+            
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="photos/1a4531eb3cf300715500a6eec31252ad7da417cb.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="photos/Screenshot 2021-08-30 214001.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="photos/vrtxr32.PNG" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="photos/Screenshot 2021-08-30 214001.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="photos/1a4531eb3cf300715500a6eec31252ad7da417cb.png" style="width:100%" onclick="currentSlide(1)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%" onclick="currentSlide(2)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/Screenshot 2021-08-30 214001.png" style="width:100%" onclick="currentSlide(3)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/vrtxr32.PNG" style="width:100%" onclick="currentSlide(4)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/Screenshot 2021-08-30 214001.png" style="width:100%" onclick="currentSlide(5)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="photos/4d37547c1597a2af77d7ddaa38359af365d22189.png" style="width:100%" onclick="currentSlide(6)">
+              </div>
+            </div>
 
           </div>
+      
+        </div>
         
       <div class="main-body-sidebar">
         <table width="100%" class="doxo-table"><tr><td ><div class=""><script type="text/javascript">widgetContext_417c8830427f={"widgetid":"views_view_webwidget_de2559ef607c60d9d8b5cb575285e742"};</script><script src="https://doxologia.ro/doxowidgetcalendar"></script><div class="doxowidgetcalendar" id="views_view_webwidget_de2559ef607c60d9d8b5cb575285e742"></div></div></td></tr></table>
