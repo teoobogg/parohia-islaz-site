@@ -35,7 +35,8 @@
   
   /* Next & previous buttons */
   .prev,
-  .next {
+  .next,
+  .close {
     cursor: pointer;
     position: absolute;
     top: 300px;
@@ -56,10 +57,18 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
+  .close {
+    right: 0;
+    top:0;
+    margin-top:0;
+    border-radius: 3px 0 0 3px;
+  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
-  .next:hover {
+  .next:hover,
+  .close:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
