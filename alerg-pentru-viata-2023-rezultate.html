@@ -83,7 +83,7 @@
           }
           slides[slideIndex-1].style.display = "flex";
           dots[slideIndex-1].className += " active";
-          scroll(0,210)
+          window.scrollTo({top: 210, left: 0, behavior: 'smooth'});
         }
       </script>
 
