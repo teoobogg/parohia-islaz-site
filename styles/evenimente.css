@@ -27,7 +27,7 @@
 
 .main-body-grid-element-title{
   font-size:30px;
-  margin:0px 10px;
+  margin:5px 10px;
   font-weight: 600;
   text-align: center;
 }
@@ -35,6 +35,8 @@
 .main-body-grid-element-desc{
   font-size:18px;
   margin:8px;
+  text-align:center;
+  margin-top:20px;
 }
 
 @media (max-width:1000px){
